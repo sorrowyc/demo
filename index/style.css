@@ -1,0 +1,653 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: url("项目图片/bg-pattern.gif");
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+/*最大的div*/
+#container{
+    width: 100%;
+    height: 2700px;
+    outline: 1px solid saddlebrown;
+}
+/*导航样式*/
+.nav{
+    width:100%;
+    height:624px;
+    outline:1px solid salmon;
+
+    position: relative;
+}
+/*导航条*/
+.daohang{
+    width: 100%;
+    height: 50px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 29;
+}
+.logo{
+    position: absolute;
+    top: 15px;
+    left:100px;
+    position: fixed;
+    z-index: 30;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.line{
+    width: 35px;
+    height: 15px;
+    position: absolute;
+    position: fixed;
+    z-index: 999;
+    right: 100px;
+    top: 22px;
+    cursor: pointer;
+}
+.line:hover .line1{
+    top: -2px;
+}
+.line:hover .line3{
+    top: 14px;
+}
+.line1,.line2,.line3{
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    z-index: 30;
+}
+.line1{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    -webkit-transition: all 0.1s linear;
+}
+.line2{
+    position: absolute;
+    right: 0px;
+    top: 6px;
+}
+.line3{
+    position: absolute;
+    right: 0px;
+    top: 12px;
+    -webkit-transition: all 0.1s linear;
+}
+.describe,.describe1,.describe2{
+    width: 800px;
+    height: 200px;
+    border: 1px solid springgreen;
+    position: absolute;
+    bottom: 140px;
+    left: 100px;
+    -webkit-transform: translate(0,350px);
+    -webkit-transition: all .5s linear;
+    z-index: 999;
+}
+.describe1,.describe2{
+    /*left: 1449px;*/
+}
+.nav .cicle{
+    position: absolute;
+    right: 100px;
+    bottom: 32px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #f2f4f6;
+}
+.nav .cicle div{
+    font-family: "myface";
+    color: white;
+    font-size: 15px;
+    -webkit-transition: all 0.3s linear;
+}
+.nav .cicle:hover div{
+    -webkit-transform: translate(0,60px);
+    opacity: 0;
+}
+/*轮播*/
+.nav .lunbo{
+    width: 2698px;
+    height: 624px;
+    font-size: 0px;
+    overflow: hidden;
+    position: relative;
+}
+.nav .lunbo #personSleep{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.nav .lunbo #waterPhone{
+    position: absolute;
+    left: 1349px;
+    top: 0px;
+}
+.nav .lunbo #boyGirls{
+    position: absolute;
+    left: 1349px;
+    top: 0px;
+}
+.nav .lunbo #personSleep img{
+    width: 1349px;
+    margin-top: -120px;
+}
+.nav .lunbo #waterPhone video{
+    width: 1349px;
+    margin-top: -110px;
+ }
+.nav .lunbo #boyGirls video{
+    width: 1349px;
+    margin-top: -110px;
+}
+.nav li{
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    border: 2px solid white;
+    float: left;
+    cursor: pointer;
+    list-style: none;
+    z-index: 10;
+    background-color: white;
+    margin-right: 9px;
+}
+.nav li:hover{
+    background: none;
+}
+.nav h4{
+    bottom: 157px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+}
+.nav h3{
+    bottom: 6px;
+    font-size: 84px;
+    line-height: 70px;
+    color: white;
+}
+.nav ul{
+    position: absolute;
+    left: 103px;
+    bottom: 47px;
+    z-index: 60;
+}
+
+/*imagination样式*/
+.imagination{
+    width: 100%;
+    height: 209px;
+    background-color: white;
+    padding-top: 67px;
+    outline: 1px solid seagreen;
+}
+.imagination div{
+    width: 660px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    outline: 1px solid slateblue;
+}
+.imagination div h2{
+    font-weight: bolder;
+    font-size: 29px;
+    margin-top: 18px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+}
+.imagination div p{
+    font-size: 14px;
+    omnes-pro:sans-serif;
+    line-height: 24px;
+    color: #302f2f;
+}
+/*image的样式*/
+.image{
+    width: 100%;
+    height: 1147px;
+    outline: 1px solid blueviolet;
+}
+.image .left{
+    width: 50%;
+    height: 100%;
+    outline: 1px solid gold;
+    float: left;
+}
+.image .left .lefttop{
+    height: 405px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    outline: 1px solid springgreen;
+}
+.image .left .lefttop img{
+    -webkit-transition: all 0.3s linear;
+}
+.image .left .lefttop:hover img{
+    -webkit-transform: scale(1.1,1.1);
+}
+.image .left .lefttop:hover div{
+    -webkit-transform: translate(0,0);
+}
+/*每张照片的弹框*/
+.public{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    color:white ;
+    line-height: 50px;
+    text-align: right;
+    background: black;
+    -webkit-transform: translate(0,60px);
+    -webkit-transition: all 0.3s linear;
+}
+/*给所有框框加十字架*/
+.public1:before{
+    content:"" ;
+    position: absolute;
+    left: 30px;
+    bottom:25px;
+    width: 21px;
+    height: 1px;
+    z-index: 999;
+    background-color:white;
+    -webkit-transition: all 0.3s linear;
+}
+.public1{
+    cursor: pointer;
+}
+.public1:after{
+    content:"" ;
+    position: absolute;
+    left: 40px;
+    bottom:15px;
+    width: 1px;
+    height: 21px;
+    z-index: 1000;
+    background-color:white;
+    -webkit-transition: all 0.3s linear;
+}
+/*鼠标移入时横线旋转180度*/
+.public1:hover:before{
+    -webkit-transform: rotate(180deg);
+}
+/*鼠标移入时竖线旋转180度*/
+.public1:hover:after{
+    -webkit-transform: rotate(90deg);
+}
+.trends:hover:before,.trends:hover:after{
+    -webkit-transform: rotate(90deg);
+}
+.rant:hover:before,.rant:hover:after{
+    -webkit-transform: rotate(90deg);
+}
+/*单独设置手表弹框的padding*/
+.image .rightleft .watch1 div{
+    line-height: 20px;
+    padding-top: 6px;
+    height: 44px;
+}
+/*设置所有弹框里面的文字*/
+.pulic h4{
+    margin-right: 25px;
+    font-size: 16px;
+}
+/*设置手机图片的宽度*/
+.image .left .lefttop img{
+    width: 100%;
+}
+/*手机图像完结*/
+/*设置左边底部的div的样式*/
+.image .left .leftbottom{
+    width: 100%;
+    height: 742px;
+    outline: 1px solid black;
+}
+.image .left .leftbottom .leftbottomleft{
+    padding-top: 30px;
+    height: 712px;
+}
+/*设置白色字体框的样式*/
+.image .left .leftbottom .leftbottomleft .looking{
+    width: 283px;
+    height: 461px;
+    padding-top: 30px;
+    position: relative;
+    border-radius: 2px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 1px rgba(128, 128, 128, 0.54);
+}
+.image .left .leftbottom .leftbottomleft .looking:before,.image .left .leftbottom .leftbottomleft .looking:after{
+    background-color:black;
+}
+.image .left .leftbottom .leftbottomleft .looking:hover:before,.image .left .leftbottom .leftbottomleft .looking:hover:after{
+    -webkit-transform: rotate(90deg);
+}
+.image .left .leftbottom .leftbottomleft .looking h2, .left .leftbottom .leftbottomleft .looking h4,.left .leftbottom .leftbottomleft .looking p {
+    margin-left: 28px;
+}
+.image .left .leftbottom .leftbottomleft .looking h2{
+    margin-top: 31px;
+    line-height: 26px;
+    font-size: 25px;
+}
+.image .left .leftbottom .leftbottomleft .looking p{
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.image .left .leftbottom .leftbottomleft .looking h4{
+    font-size: 12px;
+}
+/*设置左边底部的div的宽度和浮动*/
+.image .left .leftbottom .leftbottomleft,.image .left .leftbottom .leftbottomright{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+/*移入的时候显示遮罩层*/
+.image .left .leftbottom .leftbottomright .pingzi1:hover .pingzi,.image .left .leftbottom .leftbottomright .girls1:hover .girls{
+    -webkit-transform: translate(0,0);
+}
+/*移入时瓶子和女孩图片变大*/
+.image .left .leftbottom .leftbottomright .pingzi1:hover img,.image .left .leftbottom .leftbottomright .girls1:hover img{
+    -webkit-transform: scale(1.1,1.1);
+}
+/*左边的右边的div设置相对定位*/
+.image .left .leftbottom .leftbottomright{
+    position: relative;
+}
+/*设置瓶子和女孩图片的宽度和移入前的样式*/
+.image .left .leftbottom .leftbottomright img{
+    width: 100%;
+    -webkit-transition: all 0.3s linear;
+}
+/*装瓶子的div的样式*/
+.image .left .leftbottom .leftbottomright .pingzi1{
+    height: 405px;
+    overflow: hidden;
+    position: relative;
+}
+/*装女孩照片的div的样式*/
+.image .left .leftbottom .leftbottomright .girls1{
+    height: 337px;
+    position: relative;
+    overflow: hidden;
+}
+/*图片右边*/
+.image .right{
+    width: 50%;
+    height: 100%;
+    outline: 1px solid gold;
+    float: left;
+}
+/*右边的左边和右边*/
+.image .rightleft,.image .rightright{
+    float: left;
+    width: 50%;
+}
+/*设置手表div的高度*/
+.image .rightleft .watch1{
+    height: 340px;
+}
+/*设置手div的高度*/
+.image .rightleft .hand{
+    height: 405px;
+}
+/*设置手表和手的div的宽度和样式*/
+.image .rightleft .watch1,.image .rightleft .hand{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/*设置手表和手的移入效果*/
+.image .rightleft .watch1:hover div,.image .rightleft .hand:hover div,.image .rightright .taikongren:hover div{
+    -webkit-transform: translate(0,0);
+}
+.image .rightleft .watch1:hover img,.image .rightleft .hand:hover img,.image .rightright .taikongren:hover img{
+    -webkit-transform: scale(1.1,1.1);
+}
+/*设置手表的margin*/
+.image .rightleft .watch1 img{
+    margin-top: -40px;
+}
+/*设置手表和手的宽度和过度效果*/
+.image .rightleft .watch1 img,.image .rightleft .hand img,.image .rightright img{
+    -webkit-transition: all 0.3s linear;
+    width: 100%;
+}
+/*设置rant的样式*/
+.image .rightleft .rant{
+    width: 100%;
+    height: 377px;
+    padding-top: 25px;
+    position: relative;
+    color: white;
+    background-color:#6a39d6 ;
+}
+.image .rightleft .rant h2, .image .rightleft .rant h4,.image .rightleft .rant p {
+    margin-left: 25px;
+}
+.image .rightleft .rant h2{
+    margin-top: 31px;
+    line-height: 26px;
+}
+.image .rightleft .rant p{
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 15px;
+}
+.image .rightleft .rant h4{
+    font-size: 12px;
+}
+/*右边的左边图片结束*/
+.image .rightleft,.image .rightright .taikongren{
+    position: relative;
+    overflow: hidden;
+}
+.image .rightright .taikongren{
+    width: 100%;
+}
+.image .rightright .trends{
+    width: 100%;
+    height: 365px;
+    background-color:#6a39d6 ;
+    padding-top: 25px;
+    color: white;
+    position: relative;
+}
+.image .rightright .trends h2, .image .rightright .trends h4,.image .rightright .trends p {
+    margin-left: 25px;
+}
+.image .rightright .trends h2{
+    margin-top: 31px;
+    line-height: 26px;
+}
+.image .rightright .trends p{
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 15px;
+}
+.image .rightright .trends h4{
+    font-size: 12px;
+}
+/*图片部分结束*/
+/*make的样式开始*/
+.make{
+    width: 100%;
+    height: 141px;
+    padding: 129px 0;
+    position: relative;
+    /*outline: 1px solid springgreen;*/
+    background-image: url("项目图片/make.jpg");
+}
+.make .shadow{
+    -webkit-transition:all 0.1s linear;
+}
+.make:hover .shadow{
+    opacity: 0.5;
+}
+.make:hover .jiatou{
+    -webkit-transform: translate(20px,0);
+}
+.make .makecontent{
+    width: 860px;
+    height: 122px;
+    margin: 0 auto;
+    text-align: center;
+}
+.make .makecontent h3{
+    color: white;
+    font-size: 25px;
+}
+.make .makecontent h5{
+    color: white;
+    margin: -9px;
+    margin-bottom: 35px;
+}
+.make .makecontent p{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+.make .jiatou{
+    font-family: "myface";
+    font-size: 15px;
+    color: white;
+    margin-left: 49%;
+    font-weight: bold;
+    margin-top: 10px;
+    -webkit-transform: translate(0,0);
+    -webkit-transition:all 0.1s linear;
+}
+.make  .shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background-color: black;
+}
+@font-face {
+    font-family: "myface";
+    src:url("ux_1461050085_7284417/iconfont.ttf")
+}
+/*make的样式开始*/
+/*weibu的样式*/
+.weibu{
+    width: 1012px;
+    height: 138px;
+    padding: 56px 0;
+    background-color: #181719;
+}
+.weibu .weibucontent{
+    width: 900px;
+    height: 126px;
+    margin: 0 auto;
+    margin-left: 88px;
+    padding-top: 12px;
+}
+.weibu .weibucontent .colums1{
+    float: left;
+    width: 200px;
+    height: 130px;
+}
+.weibu .weibucontent .colums1 div{
+    font-family: "myfontface";
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+.weibu .weibucontent .colums1 div:hover,.weibu .weibucontent .colums1 h4:hover{
+    color:#52edcf;
+    cursor: pointer;
+}
+.weibu .weibucontent .colums1  h4{
+    letter-spacing: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.weibu .weibucontent .colums1  p{
+    color: white;
+    font-size: 12px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+.weibu .weibucontent .colums2{
+    width: 200px;
+    float: left;
+    line-height: 21px;
+}
+.weibu .weibucontent .colums2 h4{
+    margin-bottom: 11px;
+}
+.weibu .weibucontent .colums2 a:hover{
+    color:#52edcf;
+}
+.weibu .weibucontent .colums3{
+    width: 280px;
+    float: left;
+    margin-top: -5px;
+    line-height: 25px;
+    color: white;
+}
+.weibu .weibucontent .colums3 a:hover{
+    color:#52edcf;
+}
+.weibu .weibucontent .colums1{
+    margin-right: 60px;
+}
+.weibu .weibucontent .biaoqian{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+}
+.weibu .weibucontent a{
+    font-size: 13px;
+}
+.weibu .weibucontent h4{
+    color: white;
+    text-transform: uppercase;
+}
+.back{
+    font-family: "myfontface";
+    color: white;
+    font-size: 17px;
+    float: left;
+    margin-left: 138px;
+    margin-top: 47px;
+    cursor: pointer;
+}
+.back:hover{
+    color:#52edcf;
+}
+@font-face {
+    font-family: "myfontface";
+    src:url("fonts/font/iconfont.ttf");
+}
