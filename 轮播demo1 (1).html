@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #content{
+            position: relative;
+            width: 960px;
+            height: 520px;
+            outline: 1px solid red;
+            overflow: hidden;
+        }
+        #imgL{
+            position: absolute;
+            left: 0px;
+        }
+        #imgR{
+            position: absolute;
+            left: 960px;
+            z-index: -1;
+        }
+        @-webkit-keyframes move {
+            0%{
+                left: 0px;
+            }
+            100%{
+                left: -960px;
+            }
+        }
+        @-webkit-keyframes move2 {
+            0%{
+                left: 960px;
+            }
+            50%{
+                left: 0px;
+            }
+            100%{
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="mybox">
+    <div id="content">
+        <div id="imgL">
+            <img src="images/1.jpg" alt=""/>
+        </div>
+        <div id="imgR">
+            <img src="images/2.jpg" alt=""/>
+        </div>
+    </div><!--所有图片-->
+    <div></div><!--文字-->
+
+</div>
+<div id="mybtn">
+    <input type="button" value="1" onclick="ts(1)"/>
+    <input type="button" value="2" onclick="ts(2)"/>
+    <input type="button" value="3" onclick="ts(3)"/>
+</div><!--按钮组-->
+<script>
+    var a=1;
+    var imgL=document.getElementById("imgL");
+    var imgR=document.getElementById("imgR");
+    function ts(index){
+        if(a==1){
+            a=2;
+        }else if(a==2){
+            a=3
+        }else if(a==3){
+            a=1;
+        }
+        imgL.style.animation="move 1s linear";
+        setTimeout(function(){
+            imgL.style.animation="";
+            imgL.innerHTML="<img src='images/"+index+".jpg'/>"
+        },1000);
+
+        imgR.innerHTML="<img src='images/"+index+".jpg'/>";
+        imgR.style.animation="move2 1.5s linear";
+
+        setTimeout(function(){
+            imgR.style.animation="";
+        },1500);
+    }
+    window.onload=function(){
+        myCA=setInterval(function(){
+            ts(a);
+        },3000)
+    }
+
+</script>
+
+</body>
+</html>
